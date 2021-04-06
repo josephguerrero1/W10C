@@ -1,0 +1,107 @@
+#fight_message {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: khaki;
+    font-size: 50px;
+}
+
+#pokemon_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    .pokemon {
+        height: 55vh;
+        place-self: center;
+    }
+}
+
+#info_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    place-items: center;
+    margin-bottom: 10px;
+
+    .info {
+        width: 30vw;
+        height: 25vh;
+        font-family: 'Courier New', Courier, monospace;
+        color: darkgoldenrod;
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .user_info_items {
+        padding-right: 0px;
+        padding-left: 130px;
+    }
+
+    .computer_info_items {
+        padding-right: 120px;
+        padding-left: 50px;
+    }
+
+    #attack_container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 25px;
+        place-items: center;
+
+        #attack_button {
+            width: 20vw;
+            height: 10vh;
+            font-size: 45px;
+        }
+
+        #change_button {
+            width: 18vw;
+            height: 5vh;
+            font-size: 20px;
+        }
+
+        .buttons {
+            border-radius: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-weight: 600;
+            background-image: linear-gradient(right, khaki, gold);
+            cursor: pointer;
+        }
+    }
+}
+
+.message {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    z-index: 1;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: darkgoldenrod;
+        font-size: 150px;
+        place-self: center;
+    }
+
+    .play_again_button, a {
+        border-radius: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-weight: 600;
+        background-image: linear-gradient(right, khaki, gold);
+        cursor: pointer;
+        width: 25vw;
+        height: 10vh;
+        font-size: 35px;
+        justify-self: center;
+        align-self: start;
+    }
+}

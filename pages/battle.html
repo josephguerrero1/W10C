@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Battle Page</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <h1 id="fight_message">Fight!</h1>
+
+    <div id="pokemon_container">
+
+        <img id="user_pokemon" class="pokemon"></img>
+
+        <img id="computer_pokemon" class="pokemon"></img>
+
+    </div>
+
+    <div id="info_container">
+
+        <div id="user_info" class="info">
+
+            <h1 id="user_info_name" class="user_info_items"></h1>
+
+            <p class="user_info_items">HP: <code id="user_info_HP"></code> </p>
+
+            <p class="user_info_items">Attack: <code id="user_info_attack"></code> </p>
+
+        </div>
+
+        <div id="attack_container">
+
+            <button class="buttons" id="attack_button" onclick="battle()">Attack!</button>
+
+            <a href="../index.html" onclick="change()">
+                
+                <button class="buttons" id="change_button">Change
+                Pokemon</button>
+            
+            </a>
+
+        </div>
+
+        <div id="computer_info" class="info">
+
+            <h1 id="computer_info_name" class="computer_info_items"></h1>
+
+            <p class="computer_info_items">HP:
+
+                <code id="computer_info_HP"></code>
+
+            </p>
+
+            <p class="computer_info_items">Attack:
+
+                <code id="computer_info_attack"></code>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="victory" class="message">
+
+        <h1>Victory!</h1>
+
+        <a href="../index.html">
+            
+        <button id="restart_victory" class="play_again_button" onclick="deleteAllCookies()">Play Again</button>
+        
+        </a>
+
+    </div>
+
+    <div id="defeat" class="message">
+
+        <h1>Defeat</h1>
+
+        <a href="../index.html">
+        
+        <button id="restart_defeat" class="play_again_button" onclick="deleteAllCookies()">Play Again</button>
+
+        </a>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+    <script src='/js/app2.js'></script>
+
+</body>
+
+</html>

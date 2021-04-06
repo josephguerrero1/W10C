@@ -1,0 +1,31 @@
+#choose_message {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: khaki;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+#pokemon_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.75fr 1fr;
+
+    .pokemon {
+        width: 30vw;
+        height: 60vh;
+    }
+
+    .pokemon_description {
+        margin-left: 40px;
+
+        h2 {
+            color: darkgoldenrod;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}

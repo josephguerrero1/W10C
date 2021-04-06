@@ -1,0 +1,35 @@
+#choose_message {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: khaki;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+#pokemon_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 2.75fr 1fr;
+      grid-template-rows: 2.75fr 1fr;
+}
+
+#pokemon_container .pokemon {
+  width: 30vw;
+  height: 60vh;
+}
+
+#pokemon_container .pokemon_description {
+  margin-left: 40px;
+}
+
+#pokemon_container .pokemon_description h2 {
+  color: darkgoldenrod;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#pokemon_container .pokemon_description p {
+  font-family: 'Courier New', Courier, monospace;
+}
+/*# sourceMappingURL=style.css.map */
